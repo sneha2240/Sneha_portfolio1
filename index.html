@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Sneha Singh - Creative Video Editor, Software Developer, and BCA Student. Explore dynamic Instagram reels, graphic designs, and custom software systems.">
+  <meta name="author" content="Sneha Singh">
+  <title>Sneha Singh | Creative Video Editor & Software Developer</title>
+
+  <!-- Premium Typography & Iconography -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Glassmorphic Navbar -->
+  <header>
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        SNEHA SINGH <span class="logo-dot"></span>
+      </a>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle Navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <nav>
+        <ul>
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#showreel">Showreel</a></li>
+          <li><a href="#work">Code & Design</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#education">Timeline</a></li>
+          <li><a href="#certifications">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      
+      <div class="hero-wrapper">
+        <div class="hero-content">
+          <span class="hero-greeting">CREATIVE PORTFOLIO</span>
+          <h1 class="hero-name">Sneha Singh</h1>
+          
+          <!-- Typing Animation Text Area -->
+          <h2 class="hero-roles">I'm a Video Editor</h2>
+          
+          <p class="hero-desc">
+            BCA Student, Software Developer, and Video Editor based in Bengaluru. Crafting visually stunning short-form social media reels with high-impact transitions, sound syncs, alongside responsive and secure full-stack software systems.
+          </p>
+
+          <div class="hero-ctas">
+            <a href="#showreel" class="btn btn-primary">
+              <i class="fas fa-play-circle"></i> View My Work
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <i class="fas fa-paper-plane"></i> Let's Connect
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <!-- SOCIAL LINKS CUSTOMIZATION: Paste your profile links into the href fields below -->
+            <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:gungunsingh4204@gmail.com" class="social-link" title="Email Sneha">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a href="tel:+919444732808" class="social-link" title="Call Sneha">
+              <i class="fas fa-phone"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Floating Profile Portrait Frame -->
+        <div class="hero-image-area">
+          <div class="profile-frame">
+            <img src="assets/profile.jpg" alt="Sneha Singh Portrait">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section with Statistics -->
+    <section id="about">
+      <div class="glass-card">
+        <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+          <h2 class="section-title" style="margin-bottom: 30px;">About Me</h2>
+          <p style="color: var(--text-muted); font-size: 1.1rem; line-height: 1.8; margin-bottom: 40px;">
+            I am an ambitious Computer Applications student at Kristu Jayanti College with a deep passion for visual media and technical problem-solving. As a hybrid creative-developer, I bridges the gap between clean frontend architecture and cinematic video editing. Whether it's editing high-retention short-form Instagram reels or constructing full-stack autopsy databases, I dedicate myself to delivering polished, professional-grade results.
+          </p>
+        </div>
+
+        <!-- Metric counter counters -->
+        <div class="stats-grid">
+          <div class="stat-card glass-card">
+            <span class="stat-num">50+</span>
+            <span class="stat-label">Edited Reels & Projects</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num">4+</span>
+            <span class="stat-label">Software Projects Built</span>
+          </div>
+          <div class="stat-card glass-card">
+            <span class="stat-num">4</span>
+            <span class="stat-label">Professional Certifications</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Showreel / Video Editing Room -->
+    <section id="showreel">
+      <h2 class="section-title">The Showreel Room</h2>
+      
+      <!-- Video Filter Tabs -->
+      <div class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">All Edited Content</button>
+        <button class="filter-btn" data-filter="reels">Short-form & Reels</button>
+        <button class="filter-btn" data-filter="vlogs">Cinematic & Vlogs</button>
+      </div>
+
+      <!-- VIDEO EDITING SPACE CUSTOMIZATION:
+           These cards are dynamically populated by script.js using the 'reelData' array.
+           To add your own Instagram reels, edited videos, or YouTube links, simply open 
+           'script.js' and update the links under section 1 (reelData). -->
+      <div class="video-grid">
+        <!-- Rendered Dynamically via script.js -->
+      </div>
+    </section>
+
+    <!-- Code & Design Laboratory -->
+    <section id="work">
+      <h2 class="section-title">Code & Creative Lab</h2>
+      
+      <!-- Development Software Projects -->
+      <div class="dev-grid">
+        <!-- Project 1: Foresitrack -->
+        <div class="dev-card glass-card">
+          <div style="color: var(--purple-accent); font-size: 2rem; margin-bottom: 15px;">
+            <i class="fas fa-file-medical-alt"></i>
+          </div>
+          <h3>FORESITRACK</h3>
+          <p>
+            An Autopsy Management System designed to digitize and streamline end-to-end case records within forensic units. Ensures secure case creation, updating, search, and generation of reports for medical investigators.
+          </p>
+          <div class="dev-card-techs">
+            <span class="tech-tag">VB.NET</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Desktop App</span>
+          </div>
+        </div>
+
+        <!-- Project 2: Todo List -->
+        <div class="dev-card glass-card">
+          <div style="color: var(--purple-accent); font-size: 2rem; margin-bottom: 15px;">
+            <i class="fas fa-tasks"></i>
+          </div>
+          <h3>Todo List</h3>
+          <p>
+            A clean and responsive tasks manager developed to handle day-to-day productivity. Features simple dynamic adding, filtering, deleting, and status changes with clutter-free UX.
+          </p>
+          <div class="dev-card-techs">
+            <span class="tech-tag">VB.NET</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Responsive UI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Graphic Design Showcase Area (Posters, Logos, Photos) -->
+      <h3 class="creative-showcase-title">
+        <i class="fas fa-palette" style="color: var(--purple-accent); margin-right: 8px;"></i> Graphic Designs & Photos
+      </h3>
+      
+      <div class="design-grid">
+        <!-- 
+          ==========================================================================
+          📸 SNEHA'S PHOTO GALLERY INSTRUCTIONS:
+          To upload and display your own pictures in this section:
+          1. Copy your photo files (like .png, .jpg, .jpeg, .webp) from your Desktop 
+             and paste them into the "assets/" folder of this project.
+          2. Open this "index.html" file in your code editor.
+          3. For any card below, DELETE the class "empty-placeholder" from the div, 
+             and replace src="" inside <img> with your photo path (e.g. assets/my_poster.jpg).
+          4. Change "Your Title Here" inside <h4> and the description text inside <p>!
+          5. To add MORE photos, simply copy and paste an entire <div class="design-card"> block!
+          ==========================================================================
+        -->
+
+        <!-- 📸 PHOTO SLOT 1 -->
+        <div class="design-card">
+          <img class="design-img" src="https://lh3.googleusercontent.com/d/1O4va-eDkhvzzGrZp2IeaPXpbSbOhYDYE" alt="Neon Cinematic Concept">
+          
+          <div class="design-hover-overlay">
+            <h4>Neon Cinematic Concept</h4>
+            <p>Vibrant neon flyer blending premium color grading and brand motion aesthetics.</p>
+            <span class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 20px;">
+              <i class="fas fa-search-plus"></i> View Image
+            </span>
+          </div>
+        </div>
+
+        <!-- 📸 PHOTO SLOT 2 -->
+        <div class="design-card">
+          <img class="design-img" src="https://lh3.googleusercontent.com/d/1HYU7CIRF9mn-Qw8i1SSc-7lxiyQafdwy" alt="Amigos Brand Logo">
+          
+          <div class="design-hover-overlay">
+            <h4>Amigos Brand Logo</h4>
+            <p>Custom branding design and logo typography crafted in Canva for Amigos.</p>
+            <span class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 20px;">
+              <i class="fas fa-search-plus"></i> View Image
+            </span>
+          </div>
+        </div>
+
+        <!-- 📸 PHOTO SLOT 3 -->
+        <div class="design-card">
+          <img class="design-img" src="https://lh3.googleusercontent.com/d/1WV-5voDp-BXKoatlIpMQLt_znJpjp99u" alt="Instagram Reel Poster">
+          
+          <div class="design-hover-overlay">
+            <h4>Instagram Reel Poster</h4>
+            <p>Social media thumbnail poster tailored for high viewer retention and click-through rate.</p>
+            <span class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 20px;">
+              <i class="fas fa-search-plus"></i> View Image
+            </span>
+          </div>
+        </div>
+
+        <!-- 📸 PHOTO SLOT 4 -->
+        <div class="design-card">
+          <img class="design-img" src="https://lh3.googleusercontent.com/d/1pBcZlkIBtKLP50b1epoE6oJrJMH0XId3" alt="Typography Display">
+          
+          <div class="design-hover-overlay">
+            <h4>Typography Display</h4>
+            <p>Modern typography visual layout matching navy and violet neon color accents.</p>
+            <span class="btn btn-primary" style="padding: 8px 16px; font-size: 0.8rem; border-radius: 20px;">
+              <i class="fas fa-search-plus"></i> View Image
+            </span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills Matrix Section -->
+    <section id="skills">
+      <h2 class="section-title">Professional Skills</h2>
+      
+      <div class="skills-grid">
+        <!-- Category 1: Video Editing -->
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-video"></i> Video Editing</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">DaVinci Resolve</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Adobe Premiere Pro</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">CapCut Pro</span>
+                <span class="skill-percentage">95%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="95"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 2: Programming Stack -->
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-code"></i> Software & Databases</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Python / Java / C</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">VB.NET / SQL Server / MySQL</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">MongoDB / Data Science</span>
+                <span class="skill-percentage">75%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Category 3: Design & Workflows -->
+        <div class="skill-category glass-card">
+          <h3><i class="fas fa-tools"></i> Design & Platforms</h3>
+          <div class="skill-list">
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Canva / Branding / Posters</span>
+                <span class="skill-percentage">90%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Figma / UI Design</span>
+                <span class="skill-percentage">80%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-info">
+                <span class="skill-name">Git & GitHub Workflow</span>
+                <span class="skill-percentage">85%</span>
+              </div>
+              <div class="skill-bar-outer">
+                <div class="skill-bar-inner" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Vertical Timeline (Education & Experience) -->
+    <section id="education">
+      <h2 class="section-title">Timeline</h2>
+      
+      <div class="timeline">
+        <!-- Item 1: CodSoft Internship -->
+        <div class="timeline-item">
+          <span class="timeline-date">May 2025 - July 2025</span>
+          <div class="timeline-content glass-card">
+            <h3>Front End UI Developer Intern</h3>
+            <span class="timeline-subtitle">CodSoft | Work From Home</span>
+            <p class="timeline-desc">
+              Completed professional internship, gaining hands-on experience building clean, responsive UI layouts, collaborating on software product planning, database schema implementation, and rigorous frontend testing and documentation workflows.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 2: Kristu Jayanti BCA -->
+        <div class="timeline-item">
+          <span class="timeline-date">Aug 2023 - 2026</span>
+          <div class="timeline-content glass-card">
+            <h3>Bachelors of Computer Applications</h3>
+            <span class="timeline-subtitle">Kristu Jayanti College | Bengaluru, Karnataka</span>
+            <p class="timeline-desc">
+              Focusing on core Software Architecture, Databases (MySQL, SQL Server), Object Oriented Programming (Java, Python, C), and modern software engineering paradigms.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 3: Intermediate Kendriya Vidyalaya -->
+        <div class="timeline-item">
+          <span class="timeline-date">July 2022 - May 2023</span>
+          <div class="timeline-content glass-card">
+            <h3>PCMEH Intermediate (Higher Secondary)</h3>
+            <span class="timeline-subtitle">Kendriya Vidyalaya Nal | Bengaluru, Karnataka</span>
+            <p class="timeline-desc">
+              Completed higher secondary education in Physics, Chemistry, Mathematics, and Computer Science with focus on software foundations.
+            </p>
+          </div>
+        </div>
+
+        <!-- Item 4: Matriculation Kendriya Vidyalaya -->
+        <div class="timeline-item">
+          <span class="timeline-date">April 2020 - May 2021</span>
+          <div class="timeline-content glass-card">
+            <h3>Matriculation (Secondary School)</h3>
+            <span class="timeline-subtitle">Kendriya Vidyalaya Nal | Bengaluru, Karnataka</span>
+            <p class="timeline-desc">
+              Completed matriculation school education with excellent academic records.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Certifications Carousel Grid -->
+    <section id="certifications">
+      <h2 class="section-title">Certifications</h2>
+      
+      <div class="certifications-slider">
+        <!-- Cert 1 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <h3>GenAI Apps with Gemini</h3>
+          <span class="cert-issuer">Google Cloud & Starlit ML</span>
+        </div>
+
+        <!-- Cert 2 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon"><i class="fas fa-database"></i></div>
+          <h3>Introduction to MongoDB</h3>
+          <span class="cert-issuer">MongoDB University</span>
+        </div>
+
+        <!-- Cert 3 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Qlik Sense Business Analyst</h3>
+          <span class="cert-issuer">Qlik Qualification</span>
+        </div>
+
+        <!-- Cert 4 -->
+        <div class="cert-card glass-card">
+          <div class="cert-icon"><i class="fas fa-flask"></i></div>
+          <h3>Data Science Course</h3>
+          <span class="cert-issuer">Spring Board</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="section-title">Let's Collaborate</h2>
+      
+      <div class="contact-container">
+        <!-- Left Side Info -->
+        <div class="contact-info">
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Email Me</h4>
+              <p><a href="mailto:gungunsingh4204@gmail.com">gungunsingh4204@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-details">
+              <h4>Call Me</h4>
+              <p><a href="tel:+919444732808">+91 94447 32808</a></p>
+            </div>
+          </div>
+
+          <div class="contact-item glass-card">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <h4>Location</h4>
+              <p>Bengaluru, Karnataka, India</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side Form -->
+        <div class="contact-form-wrapper glass-card">
+          <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Message sent successfully! (This is a mock form submission)');">
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" class="form-input" placeholder="Sneha Singh" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" class="form-input" placeholder="sneha@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" class="form-input" placeholder="Tell me about your video editing project or software role..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="align-self: flex-start;">
+              <i class="fas fa-paper-plane"></i> Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Global Footer -->
+  <footer>
+    <div class="footer-content">
+      <a href="#home" class="footer-logo">SNEHA SINGH</a>
+      <p class="footer-copyright">&copy; 2026 Sneha Singh. All Rights Reserved. Built with Navy, Black & Violet Neon aesthetics.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox for Videos Showreel (Simulated and Real) -->
+  <div id="video-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" aria-label="Close Modal"><i class="fas fa-times"></i></button>
+      <div class="simulated-player">
+        <div class="player-main-view">
+          <!-- Populated by script.js -->
+        </div>
+        <div class="player-controls">
+          <button class="play-toggle"><i class="fas fa-pause"></i></button>
+          <div class="progress-bar-container">
+            <div class="progress-fill"></div>
+          </div>
+          <span class="time-display">01:14 / 02:30</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lightbox for Graphic Design & Photos -->
+  <div id="image-lightbox" class="image-lightbox">
+    <div class="lightbox-img-wrapper">
+      <img class="lightbox-img" src="" alt="View Image">
+    </div>
+    <div class="lightbox-caption">Title</div>
+    <div class="lightbox-subcaption">Description</div>
+  </div>
+
+  <!-- Custom Core Functionality -->
+  <script src="script.js"></script>
+</body>
+</html>
